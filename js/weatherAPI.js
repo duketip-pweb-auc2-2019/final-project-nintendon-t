@@ -73,7 +73,7 @@ function flee()
     $(actionText).html("You ran away.");
     setTimeout(function()
     {
-        $(outcomeText).html("Coward. Go fight.");
+        $(outcomeText).html("Coward.");
     }, 2000);
 }
 
