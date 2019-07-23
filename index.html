@@ -11,14 +11,16 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Home: Nintendon't</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
-            <a class="navbar-brand" href="#"><img src="small_logo_v2 copy.png" </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapsed" aria-controls="navbarCollapsed" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg shadow-sm fixed-top">
+            <a class="navbar-brand" href="index.html"><img class="logo" src="img/Logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapsed"
+                aria-controls="navbarCollapsed" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -39,21 +41,65 @@
     </header>
     <!--Fixed Background-->
     <main>
-        <div class="fixed"></div>
-        
-    </main>
-    <!--Most Popular Games-->
-    <!--image source for morio: http://jellymar.io/jelly-mario.gif     -->
-    <div class="row"> 
-        <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="fixed d-none d-md-block">
+            <div class="d-block mid">
+                <h2 class="m-auto header">Nintendon't</h2>
+                <h4 class="m-auto header">Making games since September 24, 1889.</h4>
+            </div>
+        </div>
+        <div class="d-block d-block d-md-none">
+            <h2 class="m-auto header">Nintendon't</h2>
+            <h4 class="m-auto header">Making games since September 24, 1889.</h4>
+        </div>
+        <!--Divider-->
+        <hr>
 
+        <!--Most Popular Games-->
+
+        <!-- Suepr Morio 63 Brothers trailer gif: https://technabob.com/blog/wp-content/uploads/2018/02/jelly_mario_bros_2.gif  -->
+
+        <h1 class="text-center">Our Most Popular Game</h1>
+        <hr>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <img class="image" src="img/gif/MorioGif.gif" alt="oof">
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <p class="paragraph">Super Morio 63 Brothers, a revolutionary game planned to release on September 20,
+                    2019. Features Morio.
+                    The idea of the game is to save your friend, orange morio,
+                    from an evil muffin Killer, " The Pan Caker". Our company's investors are so confident in the game's
+                    potential that
+                    they passed out upon seeing the breathtaking finished project's trailer you can find on the games
+                    page. Super Morio 63 Brothers was created by Nate Willis, and will be
+                    completed by Declan Scott and Harrsion Hyde.</p>
+    </main>
+    <footer>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <h2>Find us:</h2>
+                <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=-96.60857677459718%2C33.66046921206401%2C-96.60331964492799%2C33.66338480908995&amp;layer=mapnik&amp;marker=33.66192702292761%2C-96.60594820976257"
+                    style="border: 1px solid black"></iframe>
+                <h4>802 Starlight Dr, Sherman, TX, USA. ZIP code: 9202019</h4>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <h2>Contact Us:</h2>
+                <hr>
+                <br>
+                <div class="m-auto">
+                    <h4>For customer support:</h4>
+                    <p>customer.support@nintendon't.com</p>
+                    <h4>For any inquiries about our games:</h4>
+                    <p>general@nintendon't.com</p>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class= "col-lg-6 col-md-6 col-sm-12">
-            
-        </div>
-    </div>
+    </footer>
+
 
 
     <!-- Optional JavaScript -->

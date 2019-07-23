@@ -1,23 +1,18 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-    <title>About: Nintendon't</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Game Demo: Nintendon't</title>
     <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <main>
+    <header>
         <!--Navbar-->
-        <nav class="navbar navbar-expand-lg shadow-sm fixed-top">
+        <nav class="navbar navbar-expand-lgshadow-sm fixed-top">
             <a class="navbar-brand" href="index.html"><img class="logo" src="img/Logo.png" a></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapsed"
                 aria-controls="navbarCollapsed" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +21,7 @@
 
             <div class="collapse navbar-collapse" id="navbarCollapsed">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
@@ -39,28 +34,32 @@
             </div>
         </nav>
     </header>
-    <!--About-->
-    <h1 class="jumbotron">About Nintendon't</h1>
-        <div class="bd-example">
-            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="1"><li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="2"><li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="" class="d-block w-100">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Team Member #1</h5>
-                            <p>Team Member #1 Desc.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item"
-                </div>
+    <main>
+        <br>
+        <div class="m-auto container-fluid">
+            <div id="loading">
+                <h1>Loading...</h1>
+            </div>
+            <div id="game">
+                <img class="d-inline" src="img/gif/Fasty.gif" width="200vw" height="250vw">
+                <img id="enemy" class="d-inline" src="#" width="200vw" height="250vw">
             </div>
         </div>
-        
+
+        <br>
+
+        <div id="actionPanel" class="m-auto">
+            <h4 id="actionText">You've encountered an _______</h4>
+            <p id="outcome">It looks pretty angry</p>
+            <button class="d-inline" type="button" onclick="attack()">Attack</button>
+            <button class="d-inline" type="button" onclick="flee()">Flee</button>
+        </div>
+    <br>
+    <h2><strong>About This Demo</strong></h2>
+    <p>In this demo, we see our classic character, Fasty the Porcupine, as he battles agaisnt evil creatures.</p>
+    <p>This is to showcase the powers of our upcoming console, the <strong>Nintendon't 63</strong>.</p>
+    <p>The N63 has a built in router and can acess the internet at all times! This means it can get the weather data and use it in the game!</p>
+    <p>Please enjoy the demo.</p>
 
     </main>
 
@@ -86,9 +85,6 @@
                 </div>
             </div>
         </footer>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -97,6 +93,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <script src="js/weatherAPI.js"></script>
 </body>
+
 
 </html>
