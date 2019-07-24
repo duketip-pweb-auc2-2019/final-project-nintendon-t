@@ -2,6 +2,7 @@
    --background-color: #1B181C;
    --secondary-color: whitesmoke;
    --primary-color: #502D72;
+   --primary-color-d: rgb(57, 32, 82);
 }
 
 body{
@@ -25,10 +26,28 @@ nav{
     background-color: var(--primary-color);
 }
 
+input{
+    border: 2px solid var(--background-color);
+    border-radius: 7.5px;
+}
+
+iframe{
+    width: 50%;
+}
+
 .carousel-item{
     margin: none;
-    width: 75vw;
+    width:100%;
     height: 37.5vw;
+}
+
+.carousel-item img{
+    margin: auto;
+}
+
+.carousel-caption{
+    background-color: var(--primary-color);
+    border-radius: 10px;
 }
 
 .fixed{
@@ -38,6 +57,7 @@ nav{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 100%;
 }
 
 
@@ -52,7 +72,7 @@ nav{
 
 .logo{
     height: 75px;
-    width: 200px;
+    width: 75px;
 }
 
 .header{
@@ -86,6 +106,9 @@ h1{
     color: var(--secondary-color);
 }
 
+#console-ad{
+    width: 96.5%;
+}
 
 .container-fluid{
     border: 4px solid var(--secondary-color);
@@ -96,11 +119,10 @@ h1{
     max-height: 350px;
     background-color: var(--primary-color);
 }
-.card-title {
-    color: black;
-}
-.card-text {
-    color: black;
+
+.col-md-6{
+    height: 385px;
+    margin: auto;
 }
 
 .card-img-top{
@@ -109,9 +131,22 @@ h1{
     margin: auto;
 }
 
+.card{
+    border: 10px solid var(--primary-color);
+    background-color: var(--primary-color-d);
+    height: 95%;
+    width: 95%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.card-title, .card-text{
+    color: var(--secondary-color);
+}
+
 .jumbotron{
     margin-bottom: 5px;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-d);
 }
 .nav-link a{
     color: black;
@@ -122,8 +157,22 @@ h1{
     border: 2px solid black;
 }
 
+.btn-primary:hover{
+    background-color: var(--primary-color-d);
+    border: 2px solid black;
+}
+
+a{
+    color: var(--secondary-color);
+}
+
+a:hover{
+    color: var(--secondary-color);
+}
+
 .v-middle{
     margin: auto;
+    width: 75%;
 }
 
 section{

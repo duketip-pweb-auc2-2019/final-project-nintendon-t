@@ -7,32 +7,33 @@
     <link rel="stylesheet" href="style.css">
     <title>Weather Game Demo: Nintendon't</title>
     <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/gif" href="img/Logo.png" />
 </head>
 
 <body>
     <header>
         <!--Navbar-->
         <nav class="navbar navbar-expand-lg shadow-sm fixed-top navbar-dark">
-            <a class="navbar-brand" href="index.html"><img class="logo" src="img/Logo.png" a></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapsed"
-                aria-controls="navbarCollapsed" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarCollapsed">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="games.html">Our games</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                <a class="navbar-brand d-inline" href="index.html"><img class="logo" src="img/Logo.png"><p class="d-inline"> intendon't</p></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapsed"
+                    aria-controls="navbarCollapsed" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarCollapsed">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="games.html">Our games</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
     </header>
     <main>
         <br>
@@ -41,7 +42,7 @@
                 <h1>Loading...</h1>
             </div>
             <div id="game">
-                <img class="d-inline" src="img/gif/Fasty.gif" width="200vw" height="250vw">
+                <img id="Fasty" class="d-inline" src="img/gif/Fasty.gif" width="200vw" height="250vw">
                 <img id="enemy" class="d-inline" src="#" width="200vw" height="250vw">
             </div>
         </div>
@@ -53,38 +54,64 @@
             <p id="outcome">It looks pretty angry</p>
             <button class="d-inline" type="button" onclick="attack()">Attack</button>
             <button class="d-inline" type="button" onclick="flee()">Flee</button>
+            <button class="d-inline" type="button" onclick="insult()">Insult</button>
+            <button class="d-inline" type="button" onclick="giveup()">Give Up</button>
+            <button class="d-inline" type="button" onclick="talk()">Talk</button>
         </div>
-    <br>
-    <h2><strong>About This Demo</strong></h2>
-    <p>In this demo, we see our classic character, Fasty the Porcupine, as he battles agaisnt evil creatures.</p>
-    <p>This is to showcase the powers of our upcoming console, the <strong>Nintendon't 63</strong>.</p>
-    <p>The N63 has a built in router and can acess the internet at all times! This means it can get the weather data and use it in the game!</p>
-    <p>Please enjoy the demo.</p>
+        <br>
+        <h2><strong>About This Demo</strong></h2>
+        <p>In this demo, we see our classic character, Fasty the Porcupine, as he battles agaisnt evil creatures.</p>
+        <p>This is to showcase the powers of our upcoming console, the <strong>Nintendon't 46</strong>.</p>
+        <p>The N46 has a built in router and can acess the internet at all times! This means it can get the weather data
+            and use it in the game!</p>
+        <p>Please enjoy the demo.</p>
 
     </main>
 
     <footer>
-            <div class="row">
-                <div class="col-md-6 col-sm-12">
-                    <h2>Find us:</h2>
-                    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                        src="https://www.openstreetmap.org/export/embed.html?bbox=-96.60857677459718%2C33.66046921206401%2C-96.60331964492799%2C33.66338480908995&amp;layer=mapnik&amp;marker=33.66192702292761%2C-96.60594820976257"
-                        style="border: 1px solid black"></iframe>
-                    <h4>802 Starlight Dr, Sherman, TX, USA. ZIP code: 9202019</h4>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <h2>Contact Us:</h2>
-                    <hr>
-                    <br>
-                    <div class="m-auto">
-                        <h4>For customer support:</h4>
-                        <p>customer.support@nintendon't.com</p>
-                        <h4>For any inquiries about our games:</h4>
-                        <p>general@nintendon't.com</p>
-                    </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <h2>Find us:</h2>
+                <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=-96.60857677459718%2C33.66046921206401%2C-96.60331964492799%2C33.66338480908995&amp;layer=mapnik&amp;marker=33.66192702292761%2C-96.60594820976257"
+                    style="border: 1px solid black"></iframe>
+                <h4>802 Starlight Dr, Sherman, TX, USA. ZIP code: 9202019</h4>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <hr>
+                <h2>Contact Us:</h2>
+                <hr>
+                <br>
+                <div class="m-auto">
+                    <h4>For customer support:</h4>
+                    <p>customer.support@nintendon't.com</p>
+                    <h4>For any inquiries about our games:</h4>
+                    <p>general@nintendon't.com</p>
                 </div>
             </div>
-        </footer>
+            <div class="col-md-4 col-sm-12">
+                <hr>
+                <h2>Rate our webpage:</h2>
+                <hr>
+                <br>
+                <div class="m-auto">
+                    Name:<input type="text" name="name" id="name">
+                    <br>
+                    <br>
+                    <p class="d-inline">Score:</p>
+                    <i class="fas fa-star d-inline star"></i>
+                    <i class="far fa-star d-inline star"></i>
+                    <i class="far fa-star d-inline star"></i>
+                    <i class="far fa-star d-inline star"></i>
+                    <i class="far fa-star d-inline star"></i>
+                    <br>
+                    <br>
+                    <button class="btn btn-primary" type="button" onclick="UploadToServer()"><a id="server"
+                            target="_blank" href="">Submit</a></button>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -94,6 +121,8 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="js/weatherAPI.js"></script>
+    <script src="js/server.js"></script>
+    <script src="https://kit.fontawesome.com/8d2ccda9ba.js"></script>
 </body>
 
 
