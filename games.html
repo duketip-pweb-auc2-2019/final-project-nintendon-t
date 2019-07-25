@@ -20,26 +20,31 @@
     <main>
         <!--Navbar-->
         <nav class="navbar navbar-expand-lg shadow-sm fixed-top navbar-dark">
-                <a class="navbar-brand d-inline" href="index.html"><img class="logo" src="img/Logo.png"><p class="d-inline"> intendon't</p></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapsed"
-                    aria-controls="navbarCollapsed" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-    
-                <div class="collapse navbar-collapse" id="navbarCollapsed">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About Us</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="games.html">Our games</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            <a class="navbar-brand d-inline" href="index.html"><img class="logo" src="img/Logo.png">
+                <p class="d-inline"> intendon't</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapsed"
+                aria-controls="navbarCollapsed" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapsed">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="games.html">Our games</a>
+                    </li>
+                    <li class="nav-item shopping-cart-item">
+                        <i class="fas fa-shopping-cart"><a href="checkout.html">Checkout</a></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         </header>
         <!--Our Top Games-->
         <h1 class="jumbotron">Our games</h1>
@@ -47,14 +52,15 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="card m-auto">
-                    <img src="img/gif/Mario_Game.gif"
-                        class="card-img-top" alt="...">
+                    <img src="img/gif/Mario_Game.gif" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Super Morio</h5>
-                        <p class="card-text">Our original 2D platformer. You play as the Hero of the Muffin Democracy.
+                        <h6 class="card-title game-price">Price: $23.99</h6>
+                        <p class="card-text">Our original 1.9D platformer. You play as the Hero of the Muffin Democracy.
                             Always rescuing his brother, orange morio. Collect Powerdowns, kill pancakes, and save the
                             Muffin Democracy!
                         </p>
+                        <button class="btn btn-primary" type="button" onclick="addItem('Super Morio')">Buy</button>
                     </div>
                 </div>
             </div>
@@ -64,48 +70,51 @@
                         alt="...">
                     <div class="card-body">
                         <h5 class="card-title">ŁVŁ 100 Thanos</h5>
+                        <h6 class="card-title game-price">Price: $19.99</h6>
                         <p class="card-text">From the hit 2018 game, Thanos Simulator. A story of Thanos and what
-                            brought
-                            him to the decision of snapping his fingers for all eternity, constantly rebuilding the
+                            brought him to the decision of snapping his fingers for all eternity, constantly rebuilding the
                             world,
                             then destroying it again. Death in this game is inevitable.</p>
+                        <button class="btn btn-primary" type="button" onclick="addItem('Lvl 100 Thanos')">Buy</button>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="card m-auto">
-                    <img src="img/gif/blob.gif"
-                        class="card-img-top" alt="...">
+                    <img src="img/gif/blob.gif" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">The Vaccum Blob</h5>
+                        <h6 class="card-title game-price"> Price: $14.99</h6>
                         <p class="card-text">Origin Stroy: Once, a random kid from 2017 made 200 lbs of homemade slime.
                             Suddenly, the family Roomba ran into the slime, and got stuck. Before running into the
                             slime,
                             the Roomba knocked over a can of Monster Energy, which spilled onto the blob. Somehow, this
-                            mixture gave the slime life, which then was given the power of vaccuming.</p>
+                            mixture gave the slime life, which then was given the power of vaccuming, most likely because of the Roomba.</p>
+                            <button class="btn btn-primary" type="button" onclick="addItem('The Vaccum Blob')">Buy</button>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="card m-auto">
-                    <img src="img/gif/rock_sim.gif"
-                        class="card-img-top" alt="...">
+                    <img src="img/gif/rock_sim.gif" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Rock Simulator</h5>
+                        <h6 class="card-title game-price">Price: $99.99</h6>
                         <p class="card-text">Live out the amazing life of a Rock! Takes place in real time, with no
                             option
                             to fast forward! Starting at $99.99, our customers enjoy Rock Simulator because of it's
                             climatic
                             plot.</p>
+                            <button class="btn btn-primary" type="button" onclick="addItem('Rock Simulator')">Buy</button>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="card m-auto">
-                    <img src="img/gif/pacmale.gif"
-                        class="card-img-top" alt="...">
+                    <img src="img/gif/pacmale.gif" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Pac Male</h5>
+                        <h6 class="card-title game-price">Price: $14.99</h6>
                         <p class="card-text">An entirely original game, Pac Male is a game where ghosts try to chase you
                             down as
                             you are robbing them of their mysterious squares. When you think you ate all of their
@@ -114,6 +123,7 @@
                             catch
                             you?
                         </p>
+                        <button class="btn btn-primary" type="button" onclick="addItem('Pac Male')">Buy</button>
                     </div>
                 </div>
             </div>
@@ -122,18 +132,20 @@
                     <img src="img/gif/Fasty.gif" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Fasty the Porcupine</h5>
-                        <p class="card-text">We wanted to create an animal hero with the power of super speed, and
-                            porcupines seemed like the most obvious choice. Fasty fights a villain named Eggs Benidict.
+                        <h6 class="card-title game-price">Price: $15.99</h6>
+                        <p class="card-text">We created an animal hero with the power of super speed, because
+                            porcupines can be pretty fast. Fasty fights a villain named Eggs Benidict.
                         </p>
+                        <button class="btn btn-primary" type="button" onclick="addItem('Fasty the Porcupine')">Buy</button>
                     </div>
                 </div>
             </div>
             <br>
             <div class="card m-auto" id="console-ad">
-                <img src="img/N46.gif"
-                    class="card-img-top" alt="...">
+                <img src="img/N46.gif" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">New Console!</h5>
+                    <h6 class="card-title game-price">Price: $249.99</h6>
                     <p class="card-text">Come check out our latest console, with a demo of our latest and greatest game,
                         WeatherRPG!</p>
                     <a class="btn btn-primary" href="weatherRPG.html">Play a demo of one of our upcoming games for this
@@ -147,7 +159,9 @@
     <footer>
         <div class="row">
             <div class="col-md-4 col-sm-12">
+                <hr>
                 <h2>Find us:</h2>
+                <hr>
                 <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
                     src="https://www.openstreetmap.org/export/embed.html?bbox=-96.60857677459718%2C33.66046921206401%2C-96.60331964492799%2C33.66338480908995&amp;layer=mapnik&amp;marker=33.66192702292761%2C-96.60594820976257"
                     style="border: 1px solid black"></iframe>
@@ -200,6 +214,8 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="js/server.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="js/cookie.js"></script>
     <script src="https://kit.fontawesome.com/8d2ccda9ba.js"></script>
 </body>
 

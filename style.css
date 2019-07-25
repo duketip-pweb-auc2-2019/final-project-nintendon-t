@@ -27,12 +27,15 @@ nav{
 }
 
 input{
-    border: 2px solid var(--background-color);
+    border: 2px solid var(--primary-color-d);
     border-radius: 7.5px;
+    background-color: var(--background-color);
+    color: var(--primary-color);
 }
 
 iframe{
     width: 50%;
+    height: 80%;
 }
 
 .carousel-item{
@@ -57,12 +60,11 @@ iframe{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
 }
 
 
 #actionPanel{
-    background-color: #a49a79;
+    background-color: #a49a79;            
     max-height: 30vw;
     min-height: 10vh;
     width: 75%;
@@ -80,6 +82,9 @@ iframe{
     text-shadow: 2px 2px rgb(15, 15, 15);
 }
 
+.col-md-4{
+    height: 33%;
+}
 
 .mid{
     position: relative;
@@ -90,12 +95,26 @@ iframe{
 }
 
 .image{
-    width: 50%;
-    height: 75%;
+    width: 90%;
+    height: 90%;
+}
+
+.fit{
+    max-width: 100%;
+    max-height:  100%;
+}
+
+hr{
+    background-color: var(--primary-color-d);
+    height: 3px;
+    width: 90%;
+    border-radius: 20px;
 }
 
 footer{
     background-color: var(--primary-color);
+    min-height: 400px;
+    height: auto;
 }
 
 h1{
@@ -121,7 +140,7 @@ h1{
 }
 
 .col-md-6{
-    height: 385px;
+    height: 475px;
     margin: auto;
 }
 
@@ -129,6 +148,15 @@ h1{
     width: 200px;
     height: 200px;
     margin: auto;
+}
+
+.card-body p{
+    max-height: 80px;
+    height: auto;
+    overflow: auto;
+    background-color: var(--primary-color-d);
+    border: 5px solid var(--primary-color);
+    border-radius: 5px;
 }
 
 .card{
@@ -142,6 +170,10 @@ h1{
 
 .card-title, .card-text{
     color: var(--secondary-color);
+}
+
+.navbar-nav{
+    width: 50%;
 }
 
 .jumbotron{
@@ -180,4 +212,47 @@ section{
     display: flex;
     height: 20vw;
     margin: auto;
+}
+.game-price{
+    color: green;
+    font-weight: bold;
+}
+
+.shopping-cart-item{
+    height: 90%;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: var(--primary-color-d);
+    border-radius: 5px;
+}
+
+.shopping-cart-item i{
+    text-align: center;
+}
+
+.card-body ::-webkit-scrollbar{
+    background: var(--primary-color);
+    width: 10px;
+}
+
+.card-body ::-webkit-scrollbar-thumb{
+    background: var(--primary-color-d);
+    border-radius: 10px;
+}
+
+@media(min-width: 992px)
+{
+    .navbar-nav{
+        margin-right: auto;
+    }
+}
+
+@media(max-width: 991px)
+{
+    .navbar-nav{
+        margin: auto;
+    }
+}
+a{
+    font-family: 'Noto Sans KR', sans-serif;
 }

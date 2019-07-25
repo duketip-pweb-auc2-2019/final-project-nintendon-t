@@ -56,12 +56,12 @@ function getWeather(position) {
         switch (weatherDescriptor) {
             case "Clouds":
                 isWorking = true;
-                $(enemyImg).attr("src", "img/angry clouds.png")
+                $(enemyImg).attr("src", "https://piskel-imgstore-b.appspot.com/img/87c08199-af1c-11e9-89d9-2146e9607a02.gif")
                 enemyName = "Angry Cloud";
                 break;
             case "Clear":
                 isWorking = true;
-                $(enemyImg).attr("src", "https://static.giantbomb.com/uploads/square_small/12/126726/1774729-sppbanzaibill.png")
+                $(enemyImg).attr("src", "https://isaactv.files.wordpress.com/2013/04/angrysun-large1.gif")
                 enemyName = "Angry Sun";
                 break;
             case "Drizzle":
@@ -165,6 +165,25 @@ function talk() {
         setTimeout(function () {
             $("#Fasty").attr("src", "http://orig04.deviantart.net/8de6/f/2011/143/2/f/blood_splatter_transparency_by_sagacious-d3h1yw6.png");
             $(outcomeText).html("It disagreed with your point of view! You died almost immediatly...");
+        }, 2000);
+    }
+}
+function item() {
+    $(outcomeText).html("");
+
+    if (enemyName != "undefined") {
+        $("button.d-inline").attr("onclick", "");
+        $(actionText).html("You decided to eat a sandwich you were saving for later.");
+        setTimeout(function () {
+            $(enemyImg).attr("src", "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAADNCAMAAAC8cX2UAAAAA1BMVEVDJmBbyuw/AAAASElEQVR4nO3BMQEAAADCoPVPbQhfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABuA8XLAAFcyH30AAAAAElFTkSuQmCC");
+            $(outcomeText).html(" The " + enemyName + " stole your sandwich and ran away! You lied on the ground and cried for a few hours...");
+        }, 2000);
+    } else {
+        $("button.d-inline").attr("onclick", "");
+        $(actionText).html("You decided to eat a sandwich you were saving for later.");
+        setTimeout(function () {
+            $(enemyImg).attr("src", "https://media0.giphy.com/media/3o6ZtalNPn9Rva8I4o/giphy.gif");
+            $(outcomeText).html(" The " + enemyName + " stole your sandwich and ran away! You lied on the ground and cried for a few hours...");
         }, 2000);
     }
 }
