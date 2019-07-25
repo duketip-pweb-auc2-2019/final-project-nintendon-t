@@ -3,6 +3,7 @@ $(document).ready(function () {
     var bannedStrings = [];
 
     if (Cookies.get("items") == null) {
+        $(itemText).html($(itemText).html() + "\n" + "You have no items");
         Cookies.set("items", "");
         return;
     }
@@ -45,4 +46,9 @@ $(document).ready(function () {
         })
     }
     console.log(filtered);
+    var itemText = $('p#listing');
+    for(var i = 0; i < filtered.length; i++)
+    {
+        $(itemText).html($(itemText).html() + "<br>" + filtered[i].toString());
+    }
 });
