@@ -52,14 +52,15 @@
                     your purchase.</strong></u></p>
         <hr>
         <p id="listing"> <strong>Your Items:</strong></p>
-        <button class="btn btn-primary text-center"><a href="checkoutcomplete.html">Pay (Complete Transaction)</a></button>
-                Thank you for buying from our webpage!
-            </div>
-        </div>
-        <button class="btn btn-primary text-centee">Reset Shopping Cart</button>
+        <p id="price" class="game-price">Price:</p>
+        <button class="btn btn-primary text-center" onclick="Pay()">Pay</button>
+        <button class="btn btn-primary text-center" onclick="clearCart()">Clear Shopping Cart</button>
         <br>
         <br>
+        <p id="confirmation" class="d-none">Thank you for your purchase!</p>
         <br>
+        <hr>
+        <p id="delivery">Policy</p>
     </main>
     <footer>
         <div class="row">
@@ -106,6 +107,7 @@
                 </div>
             </div>
         </div>
+        <div id="fakeFooterExtend"></div>
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

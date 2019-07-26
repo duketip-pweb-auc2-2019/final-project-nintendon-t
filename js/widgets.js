@@ -1,7 +1,6 @@
 var releases = $(".lead");
 var modelRelease = $("#model");
 
-
 $(document).ready(function (){
     var origSize = $(modelRelease).css("fontSize");
     var origHeigh = $(modelRelease).css("height");
@@ -26,7 +25,7 @@ $(document).ready(function (){
             if(foundIndex == true)
             {
                 $(releases[i]).css({
-                    marginBottom: "10px"
+                    marginBottom: "20px"
                 });
             }
 
@@ -44,4 +43,15 @@ $(document).ready(function (){
             marginBottom: origMargin
         });
     });
+
+    $("#thanos").click(function(){
+        console.log("You should have aimed for the head");
+        theSnap();
+    });
 });
+
+function theSnap()
+{
+    $('.unlucky').addClass("fade");
+    $('.unlucky button').attr('onclick', '');
+}

@@ -97,6 +97,8 @@ iframe{
 .image{
     width: 90%;
     height: 90%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .fit{
@@ -114,6 +116,12 @@ hr{
 footer{
     background-color: var(--primary-color);
     min-height: 400px;
+    height: auto;
+}
+
+#fakeFooterExtend{
+    background-color: var(--primary-color);
+    min-height: 450px;
     height: auto;
 }
 
@@ -204,13 +212,13 @@ a:hover{
 
 .v-middle{
     margin: auto;
-    width: 75%;
+    width: 70%;
 }
 
 section{
     min-height: 250px;
     display: flex;
-    height: 20vw;
+    height: 100%;
     margin: auto;
 }
 .game-price{
@@ -224,6 +232,7 @@ section{
     margin-bottom: auto;
     background-color: var(--primary-color-d);
     border-radius: 5px;
+
 }
 
 .shopping-cart-item i{
@@ -245,6 +254,10 @@ section{
     .navbar-nav{
         margin-right: auto;
     }
+
+    .shopping-cart-item{
+        width: auto;
+    }
 }
 
 @media(max-width: 991px)
@@ -252,7 +265,17 @@ section{
     .navbar-nav{
         margin: auto;
     }
+    .shopping-cart-item{
+        min-width: 25%;
+        width: auto;
+        margin: auto;
+    }
 }
 a{
     font-family: 'Noto Sans KR', sans-serif;
+}
+
+.fade{
+    opacity: 1;
+    transition: opacity 3000ms linear;
 }

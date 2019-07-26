@@ -3,12 +3,13 @@ var NumberOfItems;
 $(document).ready(function (){
     if(Cookies.get("items") == null)
     {
-        Cookies.set("items", "");
+        clear();
     }
 });
 
-function addItem(itemName)
+function addItem(itemName, price)
 {
+    Cookies.set("price", (parseFloat(Cookies.get("price")) + price).toString());
     Cookies.set("items", Cookies.get("items") + itemName + ",");
     console.log(Cookies.get("items"));
 
@@ -21,5 +22,6 @@ function addItem(itemName)
 function clear()
 {
     Cookies.set("items", "");
+    Cookies.set("price", "0");
     return "SHOPPING CART, BE GONE!";
 }

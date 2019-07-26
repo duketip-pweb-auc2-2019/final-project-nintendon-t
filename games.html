@@ -51,7 +51,7 @@
         <br>
         <div class="row">
             <div class="col-md-6">
-                <div class="card m-auto">
+                <div class="card m-auto unlucky">
                     <img src="img/gif/Mario_Game.gif" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Super Morio</h5>
@@ -60,22 +60,19 @@
                             Always rescuing his brother, orange morio. Collect Powerdowns, kill pancakes, and save the
                             Muffin Democracy!
                         </p>
-                        <button class="btn btn-primary" type="button" onclick="addItem('Super Morio')">Buy</button>
+                        <button class="btn btn-primary" type="button" onclick="addItem('Super Morio', 23.99)">Buy</button>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="card m-auto">
-                    <img src="https://media2.giphy.com/media/3oEdv6thH4aJHVcs6c/giphy.gif" class="card-img-top"
+                    <img id="thanos" src="https://media2.giphy.com/media/3oEdv6thH4aJHVcs6c/giphy.gif" class="card-img-top"
                         alt="...">
                     <div class="card-body">
                         <h5 class="card-title">ŁVŁ 100 Thanos</h5>
                         <h6 class="card-title game-price">Price: $19.99</h6>
-                        <p class="card-text">From the hit 2018 game, Thanos Simulator. A story of Thanos and what
-                            brought him to the decision of snapping his fingers for all eternity, constantly rebuilding the
-                            world,
-                            then destroying it again. Death in this game is inevitable.</p>
-                        <button class="btn btn-primary" type="button" onclick="addItem('Lvl 100 Thanos')">Buy</button>
+                        <p class="card-text">From the hit 2018 game, Thanos Simulator. A story of Thanos, this game features many endings, from destroying everything, to becoming the richest person in existance. Death in this game is inevitable.</p>
+                        <button class="btn btn-primary" type="button" onclick="addItem('Lvl 100 Thanos', 19.99)">Buy</button>
                     </div>
                 </div>
             </div>
@@ -90,12 +87,12 @@
                             slime,
                             the Roomba knocked over a can of Monster Energy, which spilled onto the blob. Somehow, this
                             mixture gave the slime life, which then was given the power of vaccuming, most likely because of the Roomba.</p>
-                            <button class="btn btn-primary" type="button" onclick="addItem('The Vaccum Blob')">Buy</button>
+                            <button class="btn btn-primary" type="button" onclick="addItem('The Vaccum Blob', 14.99)">Buy</button>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="card m-auto">
+                <div class="card m-auto unlucky">
                     <img src="img/gif/rock_sim.gif" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Rock Simulator</h5>
@@ -103,27 +100,27 @@
                         <p class="card-text">Live out the amazing life of a Rock! Takes place in real time, with no
                             option
                             to fast forward! Starting at $99.99, our customers enjoy Rock Simulator because of it's
-                            climatic
+                            climatic, breathtaking
                             plot.</p>
-                            <button class="btn btn-primary" type="button" onclick="addItem('Rock Simulator')">Buy</button>
+                            <button class="btn btn-primary" type="button" onclick="addItem('Rock Simulator', 99.99)">Buy</button>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="card m-auto">
+                <div class="card m-auto unlucky">
                     <img src="img/gif/pacmale.gif" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Pac Male</h5>
                         <h6 class="card-title game-price">Price: $14.99</h6>
-                        <p class="card-text">An entirely original game, Pac Male is a game where ghosts try to chase you
+                        <p class="card-text">An entirely original game, Pac Male is a game where G-Hosts try to chase you
                             down as
                             you are robbing them of their mysterious squares. When you think you ate all of their
                             squares,
-                            they restock faster than the speed of light. How many times can you rob them before they
+                            they restock faster than the speed of light. How many times can you rob the G-Hosts before they
                             catch
                             you?
                         </p>
-                        <button class="btn btn-primary" type="button" onclick="addItem('Pac Male')">Buy</button>
+                        <button class="btn btn-primary" type="button" onclick="addItem('Pac Male', 14.99)">Buy</button>
                     </div>
                 </div>
             </div>
@@ -133,10 +130,10 @@
                     <div class="card-body">
                         <h5 class="card-title">Fasty the Porcupine</h5>
                         <h6 class="card-title game-price">Price: $15.99</h6>
-                        <p class="card-text">We created an animal hero with the power of super speed, because
-                            porcupines can be pretty fast. Fasty fights a villain named Eggs Benidict.
+                        <p class="card-text">We created an animal that runs at the 
+                            speed of light and fights like a hero. Fasty fights a villain named Eggs Benidict.
                         </p>
-                        <button class="btn btn-primary" type="button" onclick="addItem('Fasty the Porcupine')">Buy</button>
+                        <button class="btn btn-primary" type="button" onclick="addItem('Fasty the Porcupine', 15.99)">Buy</button>
                     </div>
                 </div>
             </div>
@@ -217,6 +214,7 @@
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
     <script src="js/cookie.js"></script>
     <script src="https://kit.fontawesome.com/8d2ccda9ba.js"></script>
+    <script src="js/widgets.js"></script>
 </body>
 
 </html>
