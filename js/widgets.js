@@ -45,6 +45,7 @@ $(document).ready(function (){
     });
 
     $("#thanos").click(function(){
+        alert("Dr.Morio, I don't feel so good...");
         console.log("You should have aimed for the head");
         theSnap();
     });
